@@ -1,0 +1,220 @@
+@keyframes animated-gradient-title-1 {
+	0%, 16.667%, 100% {
+		opacity: 1;
+	}
+
+	33.333%, 83.333% {
+		opacity: 0;
+	}
+}
+
+@keyframes animated-gradient-title-2 {
+	0%, 16.667%, 66.667%, 100% {
+                opacity:0
+        }
+
+	33.333%, 50% {
+		opacity: 1;
+	}
+}
+
+@keyframes animated-gradient-title-3 {
+	0%, 50%, 100% {
+		opacity: 0;
+	}
+
+	66.667%, 83.333% {
+		opacity: 1;
+	}
+}
+
+@keyframes animated-white-title-1 {
+	0%, 16.667%, 100% {
+		opacity: 0;
+	}
+
+	33.333%, 83.333% {
+		opacity: 1;
+	}
+}
+
+@keyframes animated-white-title-2 {
+	0%, 16.667%, 66.667%, 100% {
+                opacity:1
+        }
+
+	33.333%, 50% {
+		opacity: 0;
+	}
+}
+
+@keyframes animated-white-title-3 {
+	0%, 50%, 100% {
+		opacity: 1;
+	}
+
+	66.667%, 83.333% {
+		opacity: 0;
+	}
+}
+
+@keyframes btn-animation {
+  16.667%,
+  100% {
+    border-image: linear-gradient(to right, #1c5ae0, #1CB5E0) 1;
+    box-shadow: 20px 0px 60px 5px #1c5ae0c2;
+  }
+  33.333%, 50% {
+    border-image: linear-gradient(to right, #5106ff, #ff2819) 1;
+    box-shadow: 20px 0px 60px 5px #ff281991;
+  }
+  66.667%, 83.333% {
+    border-image: linear-gradient(to right, #d53369, #daae51) 1;
+    box-shadow: 20px 0px 60px 5px #daaf518e;
+  }
+}
+
+#title1 {
+  font-size: 8vh;
+  font-family: Poppins, serif;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  animation: animated-white-title-1 8s infinite;
+}
+#title2 {
+  font-size: 8vh;
+  font-family: Poppins, serif;
+  margin: 0;
+  letter-spacing: 2px;
+  color: white;
+  animation: animated-white-title-2 8s infinite;
+}
+#title3 {
+  font-size: 8vh;
+  font-family: Poppins, serif;
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+  animation: animated-white-title-3 8s infinite;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#containertitle {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containertitle1 {
+  background-size: 100%;
+  background-image: linear-gradient(to right,#1c5ae0, #1CB5E0);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  position: absolute;
+  font-size: 8vh;
+  font-family: Poppins, serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: animated-gradient-title-1 8s infinite;
+}
+
+#containertitle2 {
+  background-image: linear-gradient(to right,#5106ff, #ff2819);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  position: absolute;
+  font-size: 8vh;
+  font-family: Poppins, serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: animated-gradient-title-2 8s infinite;
+}
+
+#containertitle3 {
+  background-image: linear-gradient(to right,#d53369, #daae51);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  position: absolute;
+  font-size: 8vh;
+  font-family: Poppins, serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: animated-gradient-title-3 8s infinite;
+}
+
+#subtitle {
+  color: white;
+  font-family: Poppins, serif;
+  overflow-wrap: normal;
+  text-align: center;
+}
+
+#titlebar {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 1vh;
+  align-items: center;
+}
+
+#loginbutton {
+  background-color: #1c5ae0;
+  color: white;
+  font-size: 2vh;
+  font-family: Poppins,serif;
+  font-weight: bold;
+  width: 5%;
+  height: 80%;
+  border-radius: 4px;
+}
+
+#line {
+  width: 100%;
+  border-width: 0.5px;
+  border-color: #444444;
+  margin-bottom: 11vh;
+}
+
+#buttongetDemo {
+  margin-top: 5vh;
+  height: 5vh;
+  width: 11vw;
+  color: white;
+  font-weight: bold;
+  font-size: 2vh;
+  background-color: black;
+  border-image: linear-gradient(to right,#1c5ae0, #1CB5E0) 1;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 20px 0px 60px 5px #1c5ae0c2;
+  animation: btn-animation 8s infinite;
+}
+
+#divtext {
+  width: 19vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
